@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-epic-free-games"
+version = "0.1.0"
+description = "A Model Context Protocol server for Epic Games Store free games information"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.13"
+authors = [
+    {name = "meethuhu", email = "meethuhu@example.com"},
+]
+keywords = ["mcp", "epic games", "free games", "model context protocol"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Games/Entertainment",
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.9.4",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/meethuhu/mcp-epic-free-games"
+Repository = "https://github.com/meethuhu/mcp-epic-free-games"
+Issues = "https://github.com/meethuhu/mcp-epic-free-games/issues"
+
+[project.scripts]
+mcp-epic-free-games = "mcp_server_epic_free_games:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_server_epic_free_games"]
