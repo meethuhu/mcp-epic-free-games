@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mcp-epic-free-games"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Model Context Protocol server for Epic Games Store free games information"
 readme = "README.md"
 license = {text = "MIT"}

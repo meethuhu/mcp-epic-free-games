@@ -18,7 +18,10 @@ Add the following to your MCP client configuration:
     "epic-free-games": {
       "type": "stdio",
       "description": "Get free game information from Epic Games Store.",
-      "command": "mcp-epic-free-games",
+      "command": "uvx",
+      "args": [
+        "mcp-epic-free-games"
+      ],
       "env": {
         "TIME_ZONE": "Asia/Shanghai"
       }
