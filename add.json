@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "epic-free-games": {
+      "type": "stdio",
+      "description": "Get free game information from Epic Games Store.",
+      "command": "uvx",
+      "args": [
+        "mcp-epic-free-games"
+      ],
+      "env": {
+        "TIME_ZONE": "CST"
+      }
+    }
+  }
+}
